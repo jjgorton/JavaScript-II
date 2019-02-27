@@ -1,10 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
-const isThisIt = "This is it!"
+
 
 function closureTest() {
-  console.log(`Where is the closure? ${isThisIt}`);
+  const isThisIt = "This is it!"
+
+  function nestFunction() {
+    console.log(`Where is the closure? ${isThisIt}`);
+  }
+  nestFunction()
   // debugger;
 }
 
@@ -20,6 +25,8 @@ closureTest()
 // // Example usage: const newCounter = counter();
 // // newCounter(); // 1
 // // newCounter(); // 2
+
+
 
 // // ==== Challenge 3: Create a counter function with an object that can increment and decrement ====
 // const counterFactory = () => {
